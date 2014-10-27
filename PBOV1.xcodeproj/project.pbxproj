@@ -464,6 +464,8 @@
 		92A8611F174368D30014EAB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -473,6 +475,7 @@
 				INFOPLIST_FILE = "DrLouWSApp1/PBOV1-Info.plist";
 				"OTHER_CFLAGS[arch=armv7s]" = "";
 				PRODUCT_NAME = PBOV1;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -480,6 +483,8 @@
 		92A86120174368D30014EAB2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -488,6 +493,7 @@
 				GCC_PREFIX_HEADER = "DrLouWSApp1/PBOV1-Prefix.pch";
 				INFOPLIST_FILE = "DrLouWSApp1/PBOV1-Info.plist";
 				PRODUCT_NAME = PBOV1;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

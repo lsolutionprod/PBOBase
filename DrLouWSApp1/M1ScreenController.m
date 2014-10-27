@@ -28,12 +28,13 @@
 // Synthesize the data transfer variables
 
 @synthesize selectionName;
+//@synthesize segueType;
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-        NSLog(@"M1Controller:viewDidLoad;self.window is %@", self.description);
+        NSLog(@"M1ScreenController:viewDidLoad;self.window is %@", self.description);
 
     
     NSLog(@"M1ScreenController:viewDidLoad;iRAN ");
@@ -48,40 +49,46 @@
 
 
 // Prepare for Segue
+// CALLED prior to a Storyboard segue
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSLog(@"M1Controller : prepareforSegue Ran ****************************************************>>>>>>>>>>>>>>> ");
-     NSLog(@"M1Controller : prepareForSegue ;segue identifier is ..........>>>>   %@    <<<..........................", segue.identifier);
-    NSLog(@"M1Controller : prepareForSegue ; destination VC is ..........>>>>   %@    <<<..........................", segue.destinationViewController);
+    NSLog(@"M1ScreenController : prepareforSegue Ran ****************************************************>>>>>>>>>>>>>>> ");
+     NSLog(@"M1ScreenController : prepareForSegue ;segue identifier is ..........>>>>   %@    <<<..........................", segue.identifier);
+    NSLog(@"M1ScreenController : prepareForSegue ; destination VC is ..........>>>>   %@    <<<..........................", segue.destinationViewController);
     // this code will allow a return to a null 
     if ([segue.identifier isEqualToString: @"RtnMainMenu"])
     {
-        NSLog(@"M1Controller : Returning To Main Menu ");
+        NSLog(@"M1ScreenController : Returning To Main Menu ");
  
     }
     else if ([segue.identifier isEqualToString: @"NotImplementedMenu"])
     {
-        NSLog(@"M1Controller : Not Implemented Menu ");
+        NSLog(@"M1ScreenController : Not Implemented Menu ");
        
     }
     else if ([segue.identifier isEqualToString: @"NonFileMenu"])
     {
-        NSLog(@"M1Controller : Non File Related Menu ");
+        NSLog(@"M1ScreenController : Non File Related Menu ");
         
     }
 
     else // KEY SECTION; This code passes the Segue Identifier to the File View Controller
     {
-        NSLog(@"M1Controller : ++++ FILE MENU +++ vc.segue.identifier is ..........>>>>   %@    <<<..........................", segue.identifier);
+        NSLog(@"M1ScreenController : ++++ FILE MENU +++ vc.segue.identifier is ..........>>>>   %@    <<<..........................", segue.identifier);
         M20FileViewController *vc = segue.destinationViewController;
         vc.selectedName = segue.identifier;
-        NSLog(@"M1Controller : segue.destinationView Controller is M20FileViewController and selectedName IS ..........>>>>   %@    <<<..........................", vc.selectedName);
+        NSLog(@"M1ScreenController : segue.destinationView Controller is M20FileViewController and selectedName IS ..........>>>>   %@    <<<..........................", vc.selectedName);
     }
     // else other buttons.
    
 
 }
 
+/*
 
-
+- (IBAction)ShedBTN:(UIButton *)sender {
+   segueType.description  = @"bull";
+ 
+    
+}*/
 @end

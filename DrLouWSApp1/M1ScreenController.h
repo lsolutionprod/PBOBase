@@ -12,8 +12,11 @@
 @interface M1ScreenController : UIViewController  {
     //IBOutlet UILabel *EmployeeScreenLabel;
     NSString* introString;
+   // NSString* segueType;
+    
     
  }
+- (IBAction)ShedBTN:(UIButton *)sender;
 // - (IBAction)empNotesBTN;
 // these variables will hold and control the selection of this VC for transmission to the VCL2
 //@property (nonatomic, strong) IBOutlet UILabel* selectionLabel;
