@@ -26,7 +26,7 @@
 		92A8610E174368D30014EAB2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A8610D174368D30014EAB2 /* SenTestingKit.framework */; };
 		92A8610F174368D30014EAB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A860E6174368D30014EAB2 /* UIKit.framework */; };
 		92A86110174368D30014EAB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A860E8174368D30014EAB2 /* Foundation.framework */; };
-		92A8613B174496D10014EAB2 /* M1ScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A8613A174496D10014EAB2 /* M1ScreenController.m */; };
+		92A8613B174496D10014EAB2 /* M10ScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A8613A174496D10014EAB2 /* M10ScreenController.m */; };
 		92A86147174535AF0014EAB2 /* M20FileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A86146174535AF0014EAB2 /* M20FileViewController.m */; };
 		92A8614B1745F28D0014EAB2 /* EmpFile.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 92A8614A1745F28D0014EAB2 /* EmpFile.pdf */; };
 		92A861501745FE040014EAB2 /* EmpSchedMay.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 92A8614F1745FE040014EAB2 /* EmpSchedMay.pdf */; };
@@ -37,6 +37,7 @@
 		92A8616217461E0E0014EAB2 /* DLWSApp1IconSM1.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A8616117461E0E0014EAB2 /* DLWSApp1IconSM1.png */; };
 		92A8616417461E1E0014EAB2 /* DLWSApp1IconLG1.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A8616317461E1E0014EAB2 /* DLWSApp1IconLG1.png */; };
 		92C3B5CB178DA3B20085CAE9 /* DLWS-ScreenControl.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92C3B5CA178DA3B20085CAE9 /* DLWS-ScreenControl.plist */; };
+		92C6144419FF399400A0C1A7 /* M30FileEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C6144319FF399400A0C1A7 /* M30FileEditor.m */; };
 		92D75E8C1773F7F600BB81F1 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D75E8B1773F7F600BB81F1 /* RootViewController.m */; };
 		92D75E8F1773F8CE00BB81F1 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D75E8E1773F8CE00BB81F1 /* PhotoViewController.m */; };
 		92D75E9217742E4100BB81F1 /* DrLousWebsitesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D75E9117742E4100BB81F1 /* DrLousWebsitesController.m */; };
@@ -77,8 +78,8 @@
 		92A86105174368D30014EAB2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		92A8610C174368D30014EAB2 /* PBOV1Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PBOV1Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A8610D174368D30014EAB2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		92A86139174496D10014EAB2 /* M1ScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = M1ScreenController.h; path = DrLouWSApp1/M1ScreenController.h; sourceTree = "<group>"; };
-		92A8613A174496D10014EAB2 /* M1ScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = M1ScreenController.m; path = DrLouWSApp1/M1ScreenController.m; sourceTree = SOURCE_ROOT; };
+		92A86139174496D10014EAB2 /* M10ScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = M10ScreenController.h; path = DrLouWSApp1/M10ScreenController.h; sourceTree = "<group>"; };
+		92A8613A174496D10014EAB2 /* M10ScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = M10ScreenController.m; path = DrLouWSApp1/M10ScreenController.m; sourceTree = SOURCE_ROOT; };
 		92A86145174535AF0014EAB2 /* M20FileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M20FileViewController.h; sourceTree = "<group>"; };
 		92A86146174535AF0014EAB2 /* M20FileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M20FileViewController.m; sourceTree = "<group>"; };
 		92A8614A1745F28D0014EAB2 /* EmpFile.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = EmpFile.pdf; sourceTree = "<group>"; };
@@ -94,6 +95,8 @@
 		92A86169174620530014EAB2 /* NOW OPEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NOW OPEN.png"; path = "../../../../../../../../Dropbox/L Solution Products/Dr Lou Wing Shop/signage/NOW OPEN.png"; sourceTree = "<group>"; };
 		92A8616B1746211D0014EAB2 /* Dr Lou Logo 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dr Lou Logo 1.png"; path = "../../../../../../../../Dropbox/L Solution Products/Dr Lou Wing Shop/DLWS Website/Dr Lou Logo 1.png"; sourceTree = "<group>"; };
 		92C3B5CA178DA3B20085CAE9 /* DLWS-ScreenControl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DLWS-ScreenControl.plist"; sourceTree = "<group>"; };
+		92C6144219FF399400A0C1A7 /* M30FileEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M30FileEditor.h; sourceTree = "<group>"; };
+		92C6144319FF399400A0C1A7 /* M30FileEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M30FileEditor.m; sourceTree = "<group>"; };
 		92D75E8A1773F7F600BB81F1 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = DrLouWSApp1/RootViewController.h; sourceTree = "<group>"; };
 		92D75E8B1773F7F600BB81F1 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = DrLouWSApp1/RootViewController.m; sourceTree = "<group>"; };
 		92D75E8D1773F8CE00BB81F1 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoViewController.h; path = DrLouWSApp1/PhotoViewController.h; sourceTree = "<group>"; };
@@ -144,8 +147,10 @@
 				92A86146174535AF0014EAB2 /* M20FileViewController.m */,
 				9256119117BE709D00F0BD9A /* M21FileViewController.h */,
 				9256119217BE709D00F0BD9A /* M21FileViewController.m */,
-				92A86139174496D10014EAB2 /* M1ScreenController.h */,
-				92A8613A174496D10014EAB2 /* M1ScreenController.m */,
+				92A86139174496D10014EAB2 /* M10ScreenController.h */,
+				92A8613A174496D10014EAB2 /* M10ScreenController.m */,
+				92C6144219FF399400A0C1A7 /* M30FileEditor.h */,
+				92C6144319FF399400A0C1A7 /* M30FileEditor.m */,
 				92D75E8A1773F7F600BB81F1 /* RootViewController.h */,
 				92D75E8B1773F7F600BB81F1 /* RootViewController.m */,
 				92D75E8D1773F8CE00BB81F1 /* PhotoViewController.h */,
@@ -345,9 +350,10 @@
 				92A860F3174368D30014EAB2 /* main.m in Sources */,
 				92A860F7174368D30014EAB2 /* AppDelegate.m in Sources */,
 				92A86106174368D30014EAB2 /* ViewController.m in Sources */,
-				92A8613B174496D10014EAB2 /* M1ScreenController.m in Sources */,
+				92A8613B174496D10014EAB2 /* M10ScreenController.m in Sources */,
 				92A86147174535AF0014EAB2 /* M20FileViewController.m in Sources */,
 				92D75E8C1773F7F600BB81F1 /* RootViewController.m in Sources */,
+				92C6144419FF399400A0C1A7 /* M30FileEditor.m in Sources */,
 				92D75E8F1773F8CE00BB81F1 /* PhotoViewController.m in Sources */,
 				92D75E9217742E4100BB81F1 /* DrLousWebsitesController.m in Sources */,
 				9256119317BE709D00F0BD9A /* M21FileViewController.m in Sources */,

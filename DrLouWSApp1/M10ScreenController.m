@@ -12,18 +12,18 @@
 // of the data for all transactions.
 
 
-#import "M1ScreenController.h"
+#import "M10ScreenController.h"
 #import <stdlib.h>                  // standard library of obj c methods (utility)
 
 // Put this in to be able to contact the destination ViewController
 #import "M20FileViewController.h"
 
-@interface M1ScreenController ()
+@interface M10ScreenController ()
 
 @end
 
 
-@implementation M1ScreenController
+@implementation M10ScreenController
 
 // Synthesize the data transfer variables
 
@@ -34,10 +34,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-        NSLog(@"M1ScreenController:viewDidLoad;self.window is %@", self.description);
+        NSLog(@"M10ScreenController:viewDidLoad;self.window is %@", self.description);
 
     
-    NSLog(@"M1ScreenController:viewDidLoad;iRAN ");
+    NSLog(@"M10ScreenController:viewDidLoad;iRAN ");
 }
 
 //
@@ -52,32 +52,32 @@
 // CALLED prior to a Storyboard segue
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSLog(@"M1ScreenController : prepareforSegue Ran ****************************************************>>>>>>>>>>>>>>> ");
-     NSLog(@"M1ScreenController : prepareForSegue ;segue identifier is ..........>>>>   %@    <<<..........................", segue.identifier);
-    NSLog(@"M1ScreenController : prepareForSegue ; destination VC is ..........>>>>   %@    <<<..........................", segue.destinationViewController);
+    NSLog(@"M10ScreenController : prepareforSegue Ran ****************************************************>>>>>>>>>>>>>>> ");
+     NSLog(@"M10ScreenController : prepareForSegue ;segue identifier is ..........>>>>   %@    <<<..........................", segue.identifier);
+    NSLog(@"M10ScreenController : prepareForSegue ; destination VC is ..........>>>>   %@    <<<..........................", segue.destinationViewController);
     // this code will allow a return to a null 
     if ([segue.identifier isEqualToString: @"RtnMainMenu"])
     {
-        NSLog(@"M1ScreenController : Returning To Main Menu ");
+        NSLog(@"M10ScreenController : Returning To Main Menu ");
  
     }
     else if ([segue.identifier isEqualToString: @"NotImplementedMenu"])
     {
-        NSLog(@"M1ScreenController : Not Implemented Menu ");
+        NSLog(@"M10ScreenController : Not Implemented Menu ");
        
     }
     else if ([segue.identifier isEqualToString: @"NonFileMenu"])
     {
-        NSLog(@"M1ScreenController : Non File Related Menu ");
+        NSLog(@"M10ScreenController : Non File Related Menu ");
         
     }
 
     else // KEY SECTION; This code passes the Segue Identifier to the File View Controller
     {
-        NSLog(@"M1ScreenController : ++++ FILE MENU +++ vc.segue.identifier is ..........>>>>   %@    <<<..........................", segue.identifier);
+        NSLog(@"M10ScreenController : ++++ FILE MENU +++ vc.segue.identifier is ..........>>>>   %@    <<<..........................", segue.identifier);
         M20FileViewController *vc = segue.destinationViewController;
         vc.selectedName = segue.identifier;
-        NSLog(@"M1ScreenController : segue.destinationView Controller is M20FileViewController and selectedName IS ..........>>>>   %@    <<<..........................", vc.selectedName);
+        NSLog(@"M10ScreenController : segue.destinationView Controller is M20FileViewController and selectedName IS ..........>>>>   %@    <<<..........................", vc.selectedName);
     }
     // else other buttons.
    
