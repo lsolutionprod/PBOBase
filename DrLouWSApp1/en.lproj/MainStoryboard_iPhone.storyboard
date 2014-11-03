@@ -1147,10 +1147,10 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Yai-to-mvA"/>
-        <segue reference="avq-0d-lxG"/>
-        <segue reference="DWa-wg-QF1"/>
         <segue reference="bdc-5w-HeR"/>
+        <segue reference="3nt-XG-ezS"/>
+        <segue reference="avq-0d-lxG"/>
+        <segue reference="Yai-to-mvA"/>
         <segue reference="J9i-22-ETu"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.60749681710445758" blue="0.056149089121479645" alpha="1" colorSpace="calibratedRGB"/>
