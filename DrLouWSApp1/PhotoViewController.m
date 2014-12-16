@@ -96,7 +96,7 @@
 }
 
 - (void)restClient:(DBRestClient*)client loadMetadataFailedWithError:(NSError*)error {
-    NSLog(@"restClient:loadMetadataFailedWithError: %@", [error localizedDescription]);
+    NSLog(@"WSApp1:PhotoViewController.m:restClient:loadMetadataFailedWithError: %@", [error localizedDescription]);
     [self displayError];
     [self setWorking:NO];
 }

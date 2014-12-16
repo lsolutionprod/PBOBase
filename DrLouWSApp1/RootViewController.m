@@ -23,6 +23,8 @@
     if ((self = [super initWithCoder:aDecoder])) {
         self.title = @"Link Account";
     }
+    NSLog(@"RootViewController initWithCoder Ran!");
+
     return self;
 }
 
@@ -43,11 +45,15 @@
 
 - (IBAction)didPressPhotos {
     [self.navigationController pushViewController:photoViewController animated:YES];
+    NSLog(@"RootViewController didPressPhotos Ran!");
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self updateButtons];
+    NSLog(@"RootViewController viewWillAppear Ran!");
+
 }
 
 - (void)viewDidLoad {
@@ -56,11 +62,15 @@
                                                initWithTitle:@"Photos" style:UIBarButtonItemStylePlain
                                                target:self action:@selector(didPressPhotos)] autorelease];
     self.title = @"Link Account";
+    NSLog(@"RootViewController viewDidLoad Ran!");
+
 }
 
 - (void)viewDidUnload {
     [linkButton release];
     linkButton = nil;
+    NSLog(@"RootViewController viewDidUnload Ran!");
+
 }
 
 - (void)dealloc {
@@ -75,6 +85,8 @@
     } else {
         return YES;
     }
+    NSLog(@"RootViewController shouldAutorotate Ran!");
+
 }
 
 
@@ -88,6 +100,8 @@
     [linkButton setTitle:title forState:UIControlStateNormal];
     
     self.navigationItem.rightBarButtonItem.enabled = [[DBSession sharedSession] isLinked];
+    NSLog(@"RootViewController updateButtons Ran!");
+
 }
 
 @end

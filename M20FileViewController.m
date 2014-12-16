@@ -110,8 +110,13 @@
     NSMutableArray* newFilePaths = [NSMutableArray new];
     for (DBMetadata* child in metadata.contents) {
         NSString* extension = [[child.path pathExtension] lowercaseString];
+        NSLog(@"M20FileViewController:restClient:loadedMetadata:before if statement;child.path is %@", child.path );
+       
+        
         if (!child.isDirectory && [validExtensions indexOfObject:extension] != NSNotFound) {
             [newFilePaths addObject:child.path];
+            NSLog(@"M20FileViewController:restClient:loadedMetadata:in if statement ;child.path is %@", child.path );
+
         }
     NSLog(@"M20FileViewController:restClient:loadedMetadata;newFilePaths is %@", newFilePaths );
        

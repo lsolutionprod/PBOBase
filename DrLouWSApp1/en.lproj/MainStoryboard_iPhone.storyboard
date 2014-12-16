@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" promptedForUpgradeToXcode5="NO" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" promptedForUpgradeToXcode5="NO" initialViewController="2">
     <dependencies>
         <deployment identifier="iOS"/>
         <development version="4600" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--File Display-->
@@ -14,18 +14,6 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4y-0X-98h" colorLabel="IBBuiltInLabel-Orange">
-                                <rect key="frame" x="10" y="29" width="300" height="349"/>
-                                <color key="backgroundColor" red="1" green="0.60749681710000003" blue="0.056149089120000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="phQ-bW-OC6"/>
-                                    <constraint firstAttribute="height" constant="349" id="spg-de-vmI"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="y69-uF-brl" appends="YES" id="8Ql-JJ-uia"/>
-                                </connections>
-                            </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLv-I5-y0M">
                                 <rect key="frame" x="85" y="443" width="136" height="31"/>
                                 <color key="backgroundColor" red="1" green="0.60749681710000003" blue="0.056149089120000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -69,6 +57,18 @@
                                     <segue destination="FJK-9P-3j6" kind="modal" id="3nt-XG-ezS"/>
                                 </connections>
                             </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4y-0X-98h" colorLabel="IBBuiltInLabel-Orange">
+                                <rect key="frame" x="10" y="29" width="300" height="349"/>
+                                <color key="backgroundColor" red="1" green="0.60749681710000003" blue="0.056149089120000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="phQ-bW-OC6"/>
+                                    <constraint firstAttribute="height" constant="349" id="spg-de-vmI"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="y69-uF-brl" appends="YES" id="8Ql-JJ-uia"/>
+                                </connections>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -243,24 +243,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zef-5i-drB">
-                                <rect key="frame" x="84" y="187" width="153" height="44"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="153" id="CMZ-bD-0FI"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Schedule">
-                                    <color key="titleColor" red="1" green="0.047547050809999998" blue="0.077992961420000007" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="kIk-kZ-Lpy" kind="modal" identifier="/SCHEDULE2013.xlsx" id="bdc-5w-HeR"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="BurlCtr0010.png" translatesAutoresizingMaskIntoConstraints="NO" id="pPB-t9-8dO">
                                 <rect key="frame" x="39" y="66" width="240" height="128"/>
                                 <constraints>
@@ -314,6 +296,24 @@
                                 </state>
                                 <connections>
                                     <segue destination="kIk-kZ-Lpy" kind="modal" identifier="/PurchToSales2014.xlsx" id="a9a-Nd-PH4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zef-5i-drB">
+                                <rect key="frame" x="84" y="187" width="153" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="CMZ-bD-0FI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Schedule">
+                                    <color key="titleColor" red="1" green="0.047547050809999998" blue="0.077992961420000007" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kIk-kZ-Lpy" kind="modal" identifier="/SCHEDULE2013.xlsx" id="bdc-5w-HeR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -975,12 +975,6 @@
                                     <constraint firstAttribute="height" constant="71" id="qYQ-vs-HbS"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="DSWSLogo22.png" translatesAutoresizingMaskIntoConstraints="NO" id="PT0-S3-cIx">
-                                <rect key="frame" x="63" y="368" width="194" height="61"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="61" id="yGz-1V-Kjo"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="DR LOU'S WEBSITES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HNL-7b-n76">
                                 <rect key="frame" x="65" y="20" width="169" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1064,6 +1058,12 @@
                                     <segue destination="HNV-Wo-zZw" kind="modal" identifier="special" id="hXY-m4-VI3"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="DSWSLogo22.png" translatesAutoresizingMaskIntoConstraints="NO" id="PT0-S3-cIx">
+                                <rect key="frame" x="63" y="368" width="194" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="yGz-1V-Kjo"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.090730886148349899" green="0.97701747953693296" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1147,11 +1147,11 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="J9i-22-ETu"/>
+        <segue reference="NwU-3P-DA0"/>
+        <segue reference="JZQ-MA-kqJ"/>
         <segue reference="bdc-5w-HeR"/>
         <segue reference="3nt-XG-ezS"/>
-        <segue reference="avq-0d-lxG"/>
-        <segue reference="Yai-to-mvA"/>
-        <segue reference="J9i-22-ETu"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.60749681710445758" blue="0.056149089121479645" alpha="1" colorSpace="calibratedRGB"/>
 </document>

@@ -44,6 +44,7 @@
 	} else if ([root length] == 0) {
 		errorMsg = @"DrLouWSApp1 :AppDelagate.m RAN : Set your root to use either App Folder of full Dropbox";
 	} else {
+        NSLog(@"DrLouWSApp1 :AppDelagate.m; else clause ready to set plistPATH etc... Ran!");
 		NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
 		NSData *plistData = [NSData dataWithContentsOfFile:plistPath];
 		NSDictionary *loadedPlist =
@@ -53,6 +54,10 @@
 		if ([scheme isEqual:@"db-APP_KEY"]) {
 			errorMsg = @"Set your URL scheme correctly in DBRoulette-Info.plist";
 		}
+        NSLog(@"PBOV1 AppDelagate.m RAN : About to set the session object; plistPath = %@ ", plistPath);
+        NSLog(@"PBOV1 AppDelagate.m RAN : About to set the session object; plistData = %@ ", plistData);
+        NSLog(@"PBOV1 AppDelagate.m RAN : About to set the session object; loadedPlist = %@ ", loadedPlist);
+
 	}
 	NSLog(@"DrLouWSApp1 :AppDelagate.m RAN : About to set the session object; Ran!");
 	DBSession* session =
@@ -123,8 +128,9 @@
     NSLog(@"DrLouWSApp1 :AppDelagate.m:DropBox Handle Open URL Ran!");
     if ([[DBSession sharedSession] handleOpenURL:url]) {
         if ([[DBSession sharedSession] isLinked]) {
-            NSLog(@"DrLouWSApp1 :App linked successfully!");
+            NSLog(@"DrLouWSApp1 :AppDelegate.m;App linked successfully!");
             // At this point you can start making API calls
+            NSLog(@"DrLouWSApp1 : AppDelegate.m ; Drop Box URL is%@", url );
         }
         return YES;
     }
